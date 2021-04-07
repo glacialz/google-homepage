@@ -18,10 +18,10 @@ a:hover {
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px minmax(92px, 292px) 160px 1fr 47px;
+    grid-template-rows: 60px minmax(92px, 290px) 160px 1fr 47px;
 }
 
-.item1 {
+.nav-bar {
     display: grid;
     grid-template-columns: repeat(2, min-content) 1fr repeat(4, min-content);
     align-items: center;
@@ -102,14 +102,12 @@ a:hover {
     background: #4285f4;
 }
 
-.item2 {
-    position: relative;
-    top: 1px;
+.logo {
     align-self: end;
     justify-self: center;
 }
 
-.item3 {
+.search-container {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -128,7 +126,7 @@ a:hover {
     background-color: white;
     align-self: start;
     justify-self: center;
-    margin-top: 24px;
+    margin-top: 26px;
 }
 
 .search-bar:hover {
@@ -181,7 +179,7 @@ a:hover {
     margin: 0 8px;
     height: 36px;
     line-height: 36px;
-    bottom: 3px;
+    bottom: 1px;
     right: 6px;
 }
 
@@ -196,7 +194,7 @@ a:hover {
     margin: 0 8px;
     height: 36px;
     line-height: 36px;
-    bottom: 3px;
+    bottom: 1px;
     right: 10px;
 }
 
