@@ -27,13 +27,13 @@ a:hover {
     align-items: center;
 }
 
-.item6 {
+.about {
     margin: 0 5px 0 15px;
     padding: 11px;
     justify-self: start;
 }
 
-.item7 {
+.store {
     margin: 4px;
     padding: 11px 0;
 }
@@ -41,6 +41,7 @@ a:hover {
 .gmail {
     position: relative;
     bottom: 1px;
+    right: 1px;
     margin: 0 0 0 15px;
     color: rgba(0,0,0,0.87);
     font-size: 13px;
@@ -66,6 +67,24 @@ a:hover {
     padding: 0 8px;
 }
 
+.app-icon:hover {
+    cursor: pointer;
+}
+
+.circle {
+    position: fixed;
+    top: 10px;
+    right: 127px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle:hover {
+    background: rgba(0,0,0,.07);
+}
+
 .sign-in {
     width: 96px;
     height: 36px;
@@ -76,6 +95,11 @@ a:hover {
     border-radius: 4px;
     margin: 0 18px 0 9px; /* adjust this */
     font-weight: 550;
+}
+
+.sign-in:hover {
+    cursor: pointer;
+    background: #4285f4;
 }
 
 .item2 {
@@ -105,6 +129,16 @@ a:hover {
     align-self: start;
     justify-self: center;
     margin-top: 24px;
+}
+
+.search-bar:hover {
+    box-shadow: 0px 0px 5px .5px lightgray;
+    cursor: default;
+}
+
+.button1:hover, .button2:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 1px lightgray;
 }
 
 #magnifying-glass {
@@ -166,18 +200,6 @@ a:hover {
     right: 10px;
 }
 
-.item4 {
-    background: lightpink;
-}
-
-.itemOne {
-    background: PaleGreen;
-}
-
-.itemTwo {
-    background: BlanchedAlmond;
-}
-
 .footer-container {
     color: #70757a;
     display: grid;
@@ -217,8 +239,8 @@ a:hover {
     position: relative;
     bottom: 1px;
     align-self: center;
-    justify-self: start;
-    padding-left: 162px;
+    place-items: center;
+    padding-right: 194px;
 }
 
 .as {
