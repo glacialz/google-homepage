@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -5,4 +11,227 @@ a {
 
 a:hover {
     text-decoration: underline;
+} 
+
+.grid-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px minmax(92px, 292px) 160px 1fr 47px;
+}
+
+.item1 {
+    display: grid;
+    grid-template-columns: repeat(2, min-content) 1fr repeat(4, min-content);
+    align-items: center;
+}
+
+.item6 {
+    margin: 0 5px 0 15px;
+    padding: 11px;
+    justify-self: start;
+}
+
+.item7 {
+    margin: 4px;
+    padding: 11px 0;
+}
+
+.gmail {
+    position: relative;
+    bottom: 1px;
+    margin: 0 0 0 15px;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+    font-family: Arial,sans-serif;
+}
+
+.images {
+    position: relative;
+    bottom: 1px;
+    right: 2px;
+    margin: 0 0 0 16px;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+    font-family: Arial,sans-serif;
+}
+
+.app-icon {
+    position: relative;
+    right: 4px;
+    font-size: 1px;
+    margin: 0 0 0 20px;
+    border: 4px;
+    padding: 0 8px;
+}
+
+.sign-in {
+    width: 96px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    color: white;
+    background: #1a73e8;
+    border-radius: 4px;
+    margin: 0 18px 0 9px; /* adjust this */
+    font-weight: 550;
+}
+
+.item2 {
+    position: relative;
+    top: 1px;
+    align-self: end;
+    justify-self: center;
+}
+
+.item3 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "bar bar"
+    "b1 b2";
+}
+
+.search-bar {
+    grid-area: bar;
+    height: 44px;
+    border-radius: 24px;
+    width: 584px;
+    max-width: 584px;
+    border: 1px solid #dfe1e5;
+    background-color: white;
+    align-self: start;
+    justify-self: center;
+    margin-top: 24px;
+}
+
+#magnifying-glass {
+    font-size: 20px;
+    opacity: .5;
+    position: relative;
+    top: 8px;
+    left: 15px;
+}
+
+#search-box {
+    background: none;
+    border: none;
+    position: relative;
+    left: 22px;
+    top: 3px;
+    width: 487px;
+    height: 34px;
+    outline: none;
+    font-size: 16px;
+    color: rgba(0,0,0,.87);
+}
+
+#mic {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 10px;
+    left: 24px;
+}
+
+.button1 {
+    position: relative;
+    color: #3c4043;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    align-self: center;
+    justify-self: end;
+    padding: 0 17px;
+    margin: 0 8px;
+    height: 36px;
+    line-height: 36px;
+    bottom: 3px;
+    right: 6px;
+}
+
+.button2 {
+    position: relative;
+    color: #3c4043;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    align-self: center;
+    justify-self: start;
+    padding: 0 17px;
+    margin: 0 8px;
+    height: 36px;
+    line-height: 36px;
+    bottom: 3px;
+    right: 10px;
+}
+
+.item4 {
+    background: lightpink;
+}
+
+.itemOne {
+    background: PaleGreen;
+}
+
+.itemTwo {
+    background: BlanchedAlmond;
+}
+
+.footer-container {
+    color: #70757a;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: 47px;
+    background-color: rgb(240, 240, 240);
+    justify-items: center;
+    align-items: center;
+}
+
+#t {
+    color: #70757a;
+    padding: 0 15px;
+}
+
+#leaf {
+    position: relative;
+    right: 2px;
+    top: 1px;
+    width: 12.25px;
+    height: 14px;
+    padding: 0 4px;
+}
+
+.group1 {
+    position: relative;
+    bottom: 1px;
+    justify-self: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding-left: 20px;
+}
+
+.group2 {
+    position: relative;
+    bottom: 1px;
+    align-self: center;
+    justify-self: start;
+    padding-left: 162px;
+}
+
+.as {
+    width: 200px;
+}
+
+.group3 {
+    position: relative;
+    bottom: 1px;
+    justify-self: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding-right: 20px;
 }
