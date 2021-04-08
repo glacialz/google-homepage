@@ -20,11 +20,21 @@ a:hover {
 }
 
 .grid-body {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 60px - 47px);
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: minmax(92px, 290px) 160px 1fr;
+}
+
+.grid-footer {
+    color: #70757a;
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: 47px;
+    background-color: rgb(240, 240, 240);
+    justify-items: center;
+    align-items: center;
 }
 
 .nav-bar {
@@ -202,16 +212,6 @@ a:hover {
     line-height: 36px;
     bottom: 1px;
     right: 10px;
-}
-
-.footer-grid {
-    color: #70757a;
-    display: grid;
-    grid-template-columns: min-content 1fr min-content;
-    grid-template-rows: 47px;
-    background-color: rgb(240, 240, 240);
-    justify-items: center;
-    align-items: center;
 }
 
 #footer-text {
