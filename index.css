@@ -13,12 +13,18 @@ a:hover {
     text-decoration: underline;
 } 
 
-.grid-container {
-    height: 100vh;
+.grid-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px;
+}
+
+.grid-body {
+    height: calc(100vh - 60px);
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px minmax(92px, 290px) 160px 1fr 47px;
+    grid-template-rows: minmax(92px, 290px) 160px 1fr;
 }
 
 .nav-bar {
@@ -198,7 +204,7 @@ a:hover {
     right: 10px;
 }
 
-.footer-container {
+.footer-grid {
     color: #70757a;
     display: grid;
     grid-template-columns: min-content 1fr min-content;
@@ -208,7 +214,7 @@ a:hover {
     align-items: center;
 }
 
-#t {
+#footer-text {
     color: #70757a;
     padding: 0 15px;
 }
